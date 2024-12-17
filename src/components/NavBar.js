@@ -1,5 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useEffect, useState } from 'react';
 
 const navigation = [
 
@@ -17,6 +18,36 @@ function classNames(...classes) {
 }
 
 export default function NavBar() {
+  const [currentSection, setCurrentSection] = useState('home');
+
+  useEffect(() => {
+    const sections = navigation.map((item) => document.querySelector(item.href));
+    const options = {
+      threshold: 0.7, // Trigger when 70% of the section is in view
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setCurrentSection(entry.target.id); // Update state with the ID of the current section
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach(section => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
   return (
     <Disclosure as="nav" className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

@@ -5,7 +5,9 @@ import Home from './components/Home';
 import AboutMe from './components/About';
 import Skills from './components/Skills';
 import Experiences from './components/Experiences';
-
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
       <AboutMe/>
       <Skills/>
       <Experiences/>
+      <Projects/>
+      <Contact/>
+      <Footer/>
     </>
   );
 }
