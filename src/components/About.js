@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-24 min-h-[50vh] py-8">
     <div className="bg-white">
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative isolate overflow-hidden bg-* px-6 pt-16 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
@@ -13,15 +13,15 @@ function AboutMe() {
                 About Me
               </h2>
               <p className="mt-6 text-lg text-left leading-8 text-black">
-                I’m a recent graduate of UC Davis with a degree in Computer Science and a minor in Technology Management. 
-                With over two years of experience, I’ve built products across various industries, combining my programming and product background to deliver practical and impactful solutions. 
-                My passion lies in leveraging AI to develop innovative products that not only solve complex challenges but also provide meaningful value to end users.
+              I’m a recent UC Davis graduate with a B.S. in Computer Science and a minor in Technology Management.
+              Over the past few years, I’ve gained hands-on experience building impactful products across diverse industries, 
+              including agriculture, education, and e-commerce. 
+              I thrive at the intersection of coding and product strategy, designing solutions that deliver measurable value to users.
               </p>
               <p className="mt-6 text-lg text-left leading-8 text-black">
-                Currently, I’m working as a Software Engineer at CourseAssist, 
-                where I’m dedicated to building an AI-driven educational tool 
-                designed to provide high-quality tutoring tailored to specific course materials, 
-                empowering both students and educators with customizable, real-time support.
+              Currently, I’m a Software Engineer at FloraPulse, 
+              developing real-time IoT dashboards that provide growers with 
+              actionable irrigation insights from sensor data across multiple regions.
               </p>
               <p className="mt-6 text-lg text-left leading-8 text-black">
                 Outside of work, I enjoy watching movies, playing tennis, and cooking new recipes.

@@ -6,7 +6,7 @@ import { FaBriefcase } from 'react-icons/fa';
 
 export default function Home() {
     return (
-      <section id='home'>
+      <section id='home' className="scroll-mt-24 min-h-[50vh] py-8">
         <div className="bg-white">
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative isolate overflow-hidden bg-* px-6 pt-16 sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
@@ -20,11 +20,11 @@ export default function Home() {
                     <div className="mt-6 flex items-left justify-start gap-x-2">
                       <a className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap">
                         <FaMapMarkerAlt className="w-4 h-4 mr-2"/>
-                        San Francisco
+                        San Francisco, CA
                       </a>
-                      <a href="https://courseassistai.com/" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap">
+                      <a href="https://florapulse.com/" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap">
                         <FaBriefcase className="w-4 h-4 mr-2"/>
-                        CourseAssist
+                        FloraPulse
                       </a>
                       <a href="https://www.linkedin.com/in/klohtia/" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap">
                         <FaLinkedin className="w-5 h-5" />

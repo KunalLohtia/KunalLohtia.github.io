@@ -59,7 +59,7 @@ export default function Contact() {
 
 
   return (
-    <section id="contact">
+    <section id="contact" className="scroll-mt-24 min-h-[50vh] py-8">
       <div className="bg-white">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="relative isolate overflow-hidden bg-* px-6 pt-16 sm:rounded-3xl sm:px-16 md:pt-24 lg:px-24 lg:pt-0">
@@ -124,7 +124,7 @@ export default function Contact() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full inline-flex justify-center rounded-md border border-transparent bg-gray-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                        className="w-full inline-flex justify-center rounded-md border border-transparent bg-blue-200 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                       >
                         {isSubmitting ? 'Sending...' : 'Send Message'} {/* Change text based on submission status */}
                       </button>
