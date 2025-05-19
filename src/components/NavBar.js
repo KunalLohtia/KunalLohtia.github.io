@@ -26,10 +26,11 @@ export default function NavBar() {
   const [threshold, setThreshold] = useState(0.45);
 
   function calculateThreshold(width) {
-    if (width < 480) return 0.2;        
-    if (width < 640) return 0.25;      
-    if (width < 1024) return 0.35;      
-    return 0.45;      
+    if (width < 480) return 0.2;
+    if (width < 640) return 0.25;
+    if (width < 1024) return 0.35;
+    if (width < 1440) return 0.3;   
+    return 0.25;                   
   }
 
   useEffect(() => {
