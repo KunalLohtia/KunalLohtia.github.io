@@ -1,8 +1,5 @@
 import Kunal_Pic from '../assets/Kunal_Pic.JPG';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaMapMarkerAlt } from 'react-icons/fa';
-import { FaBriefcase } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMapMarkerAlt, FaBriefcase, FaFileAlt } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -13,23 +10,47 @@ export default function Home() {
             {/* Intro */}
             <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:py-16">
               <div className="mx-auto max-w-md lg:mx-0 lg:flex-auto lg:text-left">
-                <h2 className="text-3xl text-left font-bold tracking-tight text-black sm:text-4xl mb-4">
-                  Hello, I'm Kunal 👋
-                </h2>
-
+              <h2 className="text-3xl text-left font-bold tracking-tight text-black sm:text-4xl mb-4">
+                Hello, I'm Kunal{' '}
+                <span
+                  style={{
+                    display: 'inline-block',
+                    transformOrigin: '70% 70%',
+                    animation: 'wave 2s infinite',
+                  }}
+                >
+                  👋
+                </span>
+              </h2>
+              <style jsx>{`
+                @keyframes wave {
+                  0% { transform: rotate(0deg); }
+                  15% { transform: rotate(15deg); }
+                  30% { transform: rotate(-10deg); }
+                  45% { transform: rotate(15deg); }
+                  60% { transform: rotate(-10deg); }
+                  75% { transform: rotate(15deg); }
+                  100% { transform: rotate(0deg); }
+                }
+              `}</style>
                 <div className="mt-6 flex flex-wrap justify-start gap-2">
                   <a className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
                     <FaMapMarkerAlt className="w-4 h-4 mr-2" />
                     San Francisco, CA
                   </a>
-                  <a href="https://florapulse.com/" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
-                    <FaBriefcase className="w-4 h-4 mr-2" />
-                    FloraPulse
+                {/* Resume button */}
+                  <a
+                    href="Kunal_Lohtia_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap"
+                  >
+                    <FaFileAlt className="w-5 h-5" />
                   </a>
-                  <a href="https://www.linkedin.com/in/klohtia/" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
+                  <a href="https://www.linkedin.com/in/klohtia/" target="_blank" rel="noopener noreferrer" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
                     <FaLinkedin className="w-5 h-5" />
                   </a>
-                  <a href="https://github.com/KunalLohtia" target="_blank" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
+                  <a href="https://github.com/KunalLohtia" target="_blank" rel="noopener noreferrer" className="flex items-center border border-black rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 whitespace-nowrap">
                     <FaGithub className="w-5 h-5" />
                   </a>
                 </div>

@@ -33,12 +33,13 @@ export default function NavBar() {
   
       let current = 'home';
   
-      for (const item of navigation) {
+      for (const item of [...navigation].reverse()) {
         const section = document.querySelector(item.href);
         if (section) {
           const { offsetTop, offsetHeight } = section;
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             current = item.href.substring(1);
+            break;  
           }
         }
       }
@@ -59,11 +60,15 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center h-full">
+          <a href="#home" className="block">
             <img
               alt="Your Logo"
               src={klLogo}
-              className="h-[120px] w-auto object-contain"
+              className="h-[120px] w-auto object-contain cursor-pointer 
+              transition-transform duration-300 ease-in-out
+              hover:scale-110 hover:brightness-110"
             />
+          </a>
           </div>
 
           {/* Desktop Menu */}
