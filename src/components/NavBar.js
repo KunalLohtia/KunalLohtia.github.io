@@ -23,58 +23,35 @@ function classNames(...classes) {
 export default function NavBar() {
   const [currentSection, setCurrentSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [threshold, setThreshold] = useState(0.45);
-
-  function calculateThreshold(width) {
-    if (width < 480) return 0.2;
-    if (width < 640) return 0.25;
-    if (width < 1024) return 0.35;
-    if (width < 1440) return 0.3;   
-    return 0.25;                   
-  }
 
   useEffect(() => {
-    function handleResize() {
-      setThreshold(calculateThreshold(window.innerWidth));
-    }
-
-    handleResize();
-
-    window.addEventListener('resize', handleResize);
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  useEffect(() => {
-    const sections = navigation.map((item) => document.querySelector(item.href));
     const navbarHeight = 64;
-    const menuHeight = isMenuOpen ? 200 : 0; 
-    const totalOffset = navbarHeight + menuHeight;
-
-
-    const options = {
-      rootMargin: `-${totalOffset}px 0px 0px 0px`,
-      threshold,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setCurrentSection(entry.target.id);
+    const scrollOffset = navbarHeight + 20;
+  
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + scrollOffset;
+  
+      let current = 'home';
+  
+      for (const item of navigation) {
+        const section = document.querySelector(item.href);
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            current = item.href.substring(1);
+          }
         }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      if (section) observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        if (section) observer.unobserve(section);
-      });
+      }
+  
+      setCurrentSection(current);
     };
-  }, [threshold, isMenuOpen]);
+  
+    handleScroll(); 
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isMenuOpen]);
+  
 
   return (
     <Disclosure as="nav" className="bg-blue-200 sticky top-0 z-50" onChange={setIsMenuOpen}>
