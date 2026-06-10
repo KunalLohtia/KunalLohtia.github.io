@@ -13,15 +13,12 @@ function AboutMe() {
                 About Me
               </h2>
               <p className="mt-6 text-lg text-left leading-8 text-black">
-              I’m a recent UC Davis graduate with a B.S. in Computer Science and a minor in Technology Management.
-              Over the past few years, I’ve gained hands-on experience building impactful products across diverse industries, 
-              including agriculture, education, and e-commerce. 
-              I thrive at the intersection of coding and product strategy, designing solutions that deliver measurable value to users.
+                I'm a software engineer with a B.S. in Computer Science and a minor in Technology Management from UC Davis. 
+                I've spent the last few years building web and mobile apps across agriculture, education, and e-commerce, usually owning both the engineering and the product side.
               </p>
               <p className="mt-6 text-lg text-left leading-8 text-black">
-              Currently, I’m a Software Engineer at FloraPulse, 
-              developing real-time IoT dashboards that provide growers with 
-              actionable irrigation insights from sensor data across multiple regions.
+                Right now I'm at FloraPulse, where I build the FloraPulse web app that turns telemetry from IoT field sensors into irrigation insights growers can act on.
+                Before that, I was an AI engineer on an AI course assistant platform and the technical product lead on a UC Davis student marketplace platform.
               </p>
               <p className="mt-6 text-lg text-left leading-8 text-black">
                 Outside of work, I enjoy watching movies, playing tennis, and cooking new recipes.

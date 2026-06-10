@@ -15,31 +15,31 @@ export default function Skills() {
                     <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                       <dt className="text-lg font-medium leading-6 text-gray-900">Languages</dt>
                       <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        JavaScript, Python, Java, Swift, Kotlin, HTML/CSS, C++, C, SQL, R, MATLAB
+                        TypeScript, JavaScript, Python, Java, C++, C, SQL, HTML/CSS
                       </dd>
                     </div>
                     <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                      <dt className="text-lg font-medium leading-6 text-gray-900">Frameworks</dt>
+                      <dt className="text-lg font-medium leading-6 text-gray-900">Frameworks/Libraries</dt>
                       <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        React/React Native, Svelte, Redux, Node.js, Express.js, Flask
+                        React, React Native, Node.js, Next.js, Express.js, Svelte, Redux, Flask, Tailwind CSS
                       </dd>
                     </div>
                     <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                      <dt className="text-lg font-medium leading-6 text-gray-900">Databases</dt>
+                      <dt className="text-lg font-medium leading-6 text-gray-900">AI/ML</dt>
                       <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        MongoDB, Google Firebase, MySQL, SQLite, Prisma ORM, Pinecone, Weaviate
+                        LangChain, OpenAI API, Pandas, NumPy, Scikit-learn
+                      </dd>
+                    </div>
+                    <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+                      <dt className="text-lg font-medium leading-6 text-gray-900">Cloud & Databases</dt>
+                      <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                        AWS, GCP, Docker, PostgreSQL, MySQL, MongoDB, Firebase, Supabase, Pinecone, Weaviate
                       </dd>
                     </div>
                     <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
                       <dt className="text-lg font-medium leading-6 text-gray-900">Developer Tools</dt>
                       <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        Jira (scrum), Git (CI/CD), Axios, Postman, Expo, Selenium
-                      </dd>
-                    </div>
-                    <div className="pr-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-                      <dt className="text-lg font-medium leading-6 text-gray-900">Other</dt>
-                      <dd className="mt-1 text-lg leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                        Pandas, NumPy, Scikit-learn, Langchain, Amplitude Analytics, Unix, Figma
+                        Git, GitHub Actions, Jira, Postman, Linux/Bash
                       </dd>
                     </div>
                   </dl>
