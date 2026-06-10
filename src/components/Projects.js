@@ -33,7 +33,7 @@ export default function Projects() {
                         <Tag text="Scikit-learn" />
                       </div>
                       <p className="mt-4 text-md leading-6 text-gray-700">
-                        Logistic Regression and Artificial Neural Network models that predict breast cancer tumor diagnoses.
+                        Logistic Regression and Artificial Neural Network models that predict breast cancer tumor diagnoses with 98% accuracy.
                       </p>
                       <div className="mt-4 w-full max-w-xs mx-auto sm:max-w-sm lg:max-w-md h-48">
                         <img 
