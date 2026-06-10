@@ -56,8 +56,7 @@ export default function Home() {
                 </div>
 
                 <p className="mt-6 text-lg text-left leading-8 text-black">
-                  I'm a software engineer & product manager,
-                  blending technical expertise with product leadership to build innovative solutions.
+                  I am a software engineer with experience across full-stack development, AI/ML, and product. I've built products across a variety of domains, from AI-powered course assistants to IoT-driven agtech platforms.
                 </p>
               </div>
 
