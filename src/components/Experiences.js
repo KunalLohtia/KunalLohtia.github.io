@@ -39,10 +39,7 @@ export default function Experiences() {
                           <p className="text-lg font-semibold leading-6 text-blue-800 mt-2">Software Engineer</p>
                           <p className="text-md text-gray-500 mt-2">Jan 2025 – Present</p>
                           <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Built a cross-platform mobile dashboard using React Native and Firebase to visualize live data from IoT irrigation sensors.
-                          </p>
-                          <p className="mt-2 text-md leading-6 text-gray-700">
-                          - Developed an AI support chatbot using OpenAI API and Pinecone to assist growers via the FloraPulse website, significantly reducing manual troubleshooting.
+                          Building web and mobile applications that help growers worldwide monitor irrigation and plant water stress in real time.
                           </p>
                         </div>
                       </div>
@@ -50,7 +47,7 @@ export default function Experiences() {
 
 
                     {/* CourseAssist Box */}
-                    <a href="https://courseassistai.com/" target="_blank">
+                    <a href="https://courseassistai.com/" target="_blank" rel="noreferrer">
                       <div className="relative flex items-start space-x-4 h-full">
                         <div className="border border-gray-200 p-6 rounded-md bg-gray-50 w-full min-h-full transform transition-transform duration-200 hover:scale-105 flex-1">
                           <div className="flex items-end">
@@ -64,17 +61,15 @@ export default function Experiences() {
                           <p className="text-lg font-semibold leading-6 text-blue-800 mt-2">Software Engineer (AI)</p>
                           <p className="text-md text-gray-500 mt-2">Jul 2024 - Jan 2025</p>
                           <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Developed a semantic chunking and search system using OpenAI’s GPT-4 and RAG pipelines to help students query course materials. 
+                          Built AI-powered tutoring, course chat, and grading systems using LLMs, vector search, and retrieval-augmented generation (RAG) for a course assistant platform.
                           </p>
-                          <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Integrated Weaviate Vector DB, OpenAI API, LangChain, and Stripe for scalable AI features and billing.
-                          </p>
+                      
                         </div>
                       </div>
                     </a>
 
                     {/* AggieWorks Box */}
-                    <a href="https://aggieworks.org/products/aggieexchange" target="_blank">
+                    <a href="https://aggieworks.org/products/aggieexchange" target="_blank" rel="noreferrer">
                       <div className="relative flex items-start space-x-4 h-full">
                         <div className="border border-gray-200 p-6 rounded-md bg-gray-50 w-full min-h-full transform transition-transform duration-200 hover:scale-105 flex-1">
                           <div className="flex items-end">
@@ -88,17 +83,15 @@ export default function Experiences() {
                           <p className="text-lg font-semibold leading-6 text-blue-800 mt-2">Technical Product Manager</p>
                           <p className="text-md text-gray-500 mt-2">Jan 2023 - Jan 2024</p>
                           <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Spearheaded product strategy and feature design for AggieExchange, a UC Davis student-focused e-commerce platform. 
+                          Defined the MVP, system architecture, and technical requirements for a UC Davis marketplace application.
                           </p>
-                          <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Translated user needs into technical specs and managed engineering sprints using Jira.
-                          </p>
+                          
                         </div>
                       </div>
                     </a>
 
                     {/* Xymob Box */}
-                    <a href="https://apps.apple.com/us/app/instateam-sports-team-manager/id969899842" target="_blank">
+                    <a href="https://apps.apple.com/us/app/instateam-sports-team-manager/id969899842" target="_blank" rel="noreferrer">
                       <div className="relative flex items-start space-x-4 h-full">
                         <div className="border border-gray-200 p-6 rounded-md bg-gray-50 w-full min-h-full transform transition-transform duration-200 hover:scale-105 flex-1">
                           <div className="flex items-end">
@@ -112,17 +105,15 @@ export default function Experiences() {
                           <p className="text-lg font-semibold leading-6 text-blue-800 mt-2">Software Engineer Intern</p>
                           <p className="text-md text-gray-500 mt-2">Jan 2022 - Jan 2023</p>
                           <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Implemented core calendar and roster features for InstaTeam iOS/Android app in React Native. 
+                          Developed and shipped roster and messaging features for InstaTeam, a sports team management platform used by 300K+ users worldwide.
                           </p>
-                          <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Enhanced UI responsiveness and streamlined team management for over 10,000 active users.                          
-                          </p>
+                          
                         </div>
                       </div>
                     </a>
 
                     {/* Product Buds Box */}
-                    <a href="https://www.linkedin.com/company/productbuds/posts/?feedView=all" target="_blank">
+                    <a href="https://www.linkedin.com/company/productbuds/posts/?feedView=all" target="_blank" rel="noreferrer">
                       <div className="relative flex items-start space-x-4 h-full">
                         <div className="border border-gray-200 p-6 rounded-md bg-gray-50 w-full min-h-full transform transition-transform duration-200 hover:scale-105 flex-1">
                           <div className="flex items-end">
@@ -136,11 +127,9 @@ export default function Experiences() {
                           <p className="text-lg font-semibold leading-6 text-blue-800 mt-2">Product Manager</p>
                           <p className="text-md text-gray-500 mt-2">Oct 2022 - Dec 2022</p>
                           <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Led ideation and early design sprints for Referral Buddy, a tool connecting job seekers with employee referrers. 
+                          Defined the MVP and product strategy for Referral Buddy, a platform connecting job seekers with employee referrers.
                           </p>
-                          <p className="mt-4 text-md leading-6 text-gray-700">
-                          - Collaborated cross-functionally on user flows, wireframes, and MVP specs.                          
-                          </p>
+                          
                         </div>
                       </div>
                     </a>
