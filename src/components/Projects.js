@@ -20,7 +20,7 @@ export default function Projects() {
                 <div className="flex gap-6 lg:flex-row flex-col">
 
                   {/* Breast Cancer Tumor Predictor */}
-                  <a href="https://github.com/KunalLohtia/Breast-Cancer-Tumor-Predictor" target="_blank">
+                  <a href="https://github.com/KunalLohtia/Breast-Cancer-Tumor-Predictor" target="_blank" rel="noreferrer">
                     <div className="flex-1 border border-gray-200 p-6 rounded-md bg-gray-50 transition-transform duration-200 hover:scale-105 min-h-full">
                       <div className="flex items-end">
                         <h3 className="text-2xl font-bold leading-7 text-gray-900">Breast Cancer Tumor Predictor</h3>
@@ -46,7 +46,7 @@ export default function Projects() {
                   </a>
 
                   {/* Melody Miner */}
-                  <a href="https://github.com/KunalLohtia/MelodyMiner" target="_blank">
+                  <a href="https://github.com/KunalLohtia/MelodyMiner" target="_blank" rel="noreferrer">
                     <div className="flex-1 border border-gray-200 p-6 rounded-md bg-gray-50 transition-transform duration-200 hover:scale-105 min-h-full">
                       <div className="flex items-end">
                         <h3 className="text-2xl font-bold leading-7 text-gray-900">Melody Miner</h3>
@@ -55,7 +55,7 @@ export default function Projects() {
                         <Tag text="React Native" />
                         <Tag text="Redux" />
                         <Tag text="Firebase" />
-                        <Tag text="Oauth 2.0" />
+                        <Tag text="OAuth 2.0" />
                         <Tag text="Spotify API" />
                       </div>
                       <p className="mt-4 text-md leading-6 text-gray-700">
